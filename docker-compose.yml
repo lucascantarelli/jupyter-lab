@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  jupyter-lab:
+      image: jupyter/datascience-notebook
+      restart: always
+      volumes:
+        - /home/lucasc/repositorios/jupyter-lab/data:/home/jovyan/work
+      ports:
+        - 8888:8888
+      container_name: "jupyter-lab"
